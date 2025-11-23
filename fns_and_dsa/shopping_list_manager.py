@@ -13,11 +13,11 @@ def main():
         choice = input("Enter your choice: ")
 
         if choice == "1":
-            item = input("Enter item to be added: ")
+            item = input("Enter the item to add: ")
             shopping_list.append(item)
             print(item, "has been added to the list")
         elif choice == "2":
-            item = input("Enter item to be removed: ")
+            item = input("Enter the item to remove: ")
             if item in shopping_list:
                 shopping_list.remove(item)
                 print(item, "has been removed from the list")
@@ -31,10 +31,9 @@ def main():
                 for item in shopping_list:
                     print(item)
         elif choice == "4":
-            print("Exitin the shopping list program")
+            print("Goodbye!")
             break
         else:
-            print("Invalid option, Enter an option from 1 to 4")
-
+            print("Invalid choice. Please try again.")
 if __name__ == "__main__":
     main()
